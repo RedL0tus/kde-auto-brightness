@@ -72,7 +72,7 @@ public:
 
     void stop();
 
-    bool isStarted();
+    bool isStarted() const;
 };
 
 #endif // KDED_AUTO_BRIGHTNESS_AMBIENT_LIGHT_SENSOR_H

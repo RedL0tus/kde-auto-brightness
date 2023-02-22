@@ -138,7 +138,7 @@ void AmbientLightSensor::stop()
     this->m_started = false;
 }
 
-bool AmbientLightSensor::isStarted()
+bool AmbientLightSensor::isStarted() const
 {
     return this->m_started;
 }
