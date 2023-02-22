@@ -37,6 +37,9 @@ AutoBrightness::~AutoBrightness()
 
 void AutoBrightness::enable()
 {
+    if (!this->m_sensor->hasSensor().value_or(false)) {
+        return;
+    }
     qDebug() << "Auto Brightness has been enabled";
     if (!this->m_sensor->isStarted()) {
         this->m_sensor->start();
