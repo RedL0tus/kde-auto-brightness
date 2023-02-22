@@ -74,7 +74,10 @@ void AutoBrightness::setBrightness(double lightLevel)
     auto targetBrightness = static_cast<int>(std::sqrt(lightLevel / this->m_config->brightnessCutoff()) * maxBrightness);
     targetBrightness = std::min(targetBrightness, maxBrightness);
     qDebug() << "Target brightness: " << targetBrightness;
-    this->m_control->call(method, targetBrightness);
+    auto currentBrightness = this->getBrightness();
+    if (currentBrightness.value_or(targetBrightness) != targetBrightness) {
+        this->m_control->call(method, targetBrightness);
+    }
 }
 
 void AutoBrightness::handleEnabledChanged()
