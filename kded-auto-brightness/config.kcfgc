@@ -1,0 +1,6 @@
+File=config.kcfg
+NameSpace=AutoBrightnessConfig
+ClassName=Config
+Mutators=true
+ParentInConstructor=true
+GenerateProperties=true

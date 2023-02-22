@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <group name="General">
+    <entry name="Enabled" type="Bool">
+      <label>Enable auto brightness</label>
+      <default>true</default>
+    </entry>
+    <entry name="Interval" type="Int">
+      <label>Interval between each reading in microseconds</label>
+      <default>1000</default>
+    </entry>
+    <entry name="DisablePopup" type="Bool">
+      <label>Disable popups after adjusting screen brightness</label>
+      <default>false</default>
+    </entry>
+    <entry name="BrightnessCutoff" type="Double">
+      <label>The brightness value that will cause the display brightness be 100%</label>
+      <default>150.0</default>
+    </entry>
+  </group>
+</kcfg>

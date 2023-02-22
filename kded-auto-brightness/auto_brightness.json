@@ -1,0 +1,11 @@
+{
+  "KPlugin": {
+    "Description": "Automatically adjust screen brightness",
+    "Description[zh_CN]": "自动设置屏幕亮度",
+    "Name": "Auto Brightness",
+    "Name[zh_CN]": "自动屏幕亮度"
+  },
+  "X-KDE-DBus-ModuleName": "auto_brightness",
+  "X-KDE-Kded-autoload": true,
+  "X-KDE-Kded-phase": 1
+}
