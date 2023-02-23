@@ -18,7 +18,7 @@ std::optional<std::pair<double, double>> AmbientLightSensor::stat()
 {
     auto window = &this->m_window;
     if (window->empty()) {
-        return std::nullopt;
+        return {};
     }
     auto windowSize = (double)window->size();
     auto sum = std::reduce(window->begin(), window->end());

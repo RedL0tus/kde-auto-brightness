@@ -21,9 +21,6 @@ const QString POWERDEVIL_GET_MAX_BRIGHTNESS = QStringLiteral("brightnessMax");
 const QString POWERDEVIL_SET_BRIGHTNESS = QStringLiteral("setBrightness");
 const QString POWERDEVIL_SET_BRIGHTNESS_SILENT = QStringLiteral("setBrightnessSilent");
 
-// Default state
-const int DEFAULT_TIMEOUT = 5000;
-
 class Q_DECL_EXPORT AutoBrightness : public KDEDModule
 {
     Q_OBJECT

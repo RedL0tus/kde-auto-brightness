@@ -15,7 +15,7 @@ template<typename T>
 std::optional<T> extractValue(QDBusMessage msg)
 {
     if ((msg.type() == QDBusMessage::ErrorMessage) || (msg.type() == QDBusMessage::InvalidMessage)) {
-        return std::nullopt;
+        return {};
     }
     auto var = msg.arguments().at(0).value<QDBusVariant>();
     return var.variant().value<T>();

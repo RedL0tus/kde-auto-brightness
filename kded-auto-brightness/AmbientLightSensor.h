@@ -44,11 +44,9 @@ private:
     std::optional<std::pair<double, double>> stat();
 
 public Q_SLOTS:
-
     void fillBuffer();
 
 Q_SIGNALS:
-
     void LightLevelChanged(double lightLevel);
 
 public:
@@ -72,7 +70,7 @@ public:
 
     void stop();
 
-    bool isStarted() const;
+    [[nodiscard]] bool isStarted() const;
 };
 
 #endif // KDED_AUTO_BRIGHTNESS_AMBIENT_LIGHT_SENSOR_H
