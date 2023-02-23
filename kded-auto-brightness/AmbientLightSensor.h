@@ -9,20 +9,20 @@
 #include <optional>
 #include <utility>
 
-#define SENSOR_PROXY_DESTINATION QStringLiteral("net.hadess.SensorProxy")
-#define SENSOR_PROXY_PATH QStringLiteral("/net/hadess/SensorProxy")
-#define SENSOR_PROXY_INTERFACE QStringLiteral("net.hadess.SensorProxy")
-#define SENSOR_PROXY_PROPERTY_HAS_AMBIENT_LIGHT QStringLiteral("HasAmbientLight")
-#define SENSOR_PROXY_PROPERTY_LIGHT_LEVEL QStringLiteral("LightLevel")
-#define SENSOR_PROXY_CLAIM QStringLiteral("ClaimLight")
-#define SENSOR_PROXY_RELEASE QStringLiteral("ReleaseLight")
+const QString SENSOR_PROXY_DESTINATION = QStringLiteral("net.hadess.SensorProxy");
+const QString SENSOR_PROXY_PATH = QStringLiteral("/net/hadess/SensorProxy");
+const QString SENSOR_PROXY_INTERFACE = QStringLiteral("net.hadess.SensorProxy");
+const QString SENSOR_PROXY_PROPERTY_HAS_AMBIENT_LIGHT = QStringLiteral("HasAmbientLight");
+const QString SENSOR_PROXY_PROPERTY_LIGHT_LEVEL = QStringLiteral("LightLevel");
+const QString SENSOR_PROXY_CLAIM = QStringLiteral("ClaimLight");
+const QString SENSOR_PROXY_RELEASE = QStringLiteral("ReleaseLight");
 
-#define DEFAULT_INTERVAL 1000
+constexpr int DEFAULT_INTERVAL = 1000;
 
 // For peak-detection algorithm
-#define DEFAULT_THRESHOLD 2.0
-#define DEFAULT_INFLUENCE 0.3
-#define DEFAULT_LAG 10
+constexpr double DEFAULT_THRESHOLD = 2.0;
+constexpr double DEFAULT_INFLUENCE = 0.3;
+constexpr int DEFAULT_LAG = 10;
 
 class AmbientLightSensor : public QObject
 {

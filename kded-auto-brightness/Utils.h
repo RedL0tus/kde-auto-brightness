@@ -8,8 +8,8 @@
 
 #include <optional>
 
-#define PROPERTIES_INTERFACE QStringLiteral("org.freedesktop.DBus.Properties")
-#define PROPERTIES_GET QStringLiteral("Get")
+const QString PROPERTIES_INTERFACE = QStringLiteral("org.freedesktop.DBus.Properties");
+const QString PROPERTIES_GET = QStringLiteral("Get");
 
 template<typename T>
 std::optional<T> extractValue(QDBusMessage msg)

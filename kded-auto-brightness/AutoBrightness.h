@@ -13,13 +13,13 @@
 
 #include "AmbientLightSensor.h"
 
-#define POWERDEVIL_DESTINATION QStringLiteral("local.org_kde_powerdevil")
-#define POWERDEVIL_PATH QStringLiteral("/org/kde/Solid/PowerManagement/Actions/BrightnessControl")
-#define POWERDEVIL_INTERFACE QStringLiteral("org.kde.Solid.PowerManagement.Actions.BrightnessControl")
-#define POWERDEVIL_GET_BRIGHTNESS QStringLiteral("brightness")
-#define POWERDEVIL_GET_MAX_BRIGHTNESS QStringLiteral("brightnessMax")
-#define POWERDEVIL_SET_BRIGHTNESS QStringLiteral("setBrightness")
-#define POWERDEVIL_SET_BRIGHTNESS_SILENT QStringLiteral("setBrightnessSilent")
+const QString POWERDEVIL_DESTINATION = QStringLiteral("local.org_kde_powerdevil");
+const QString POWERDEVIL_PATH = QStringLiteral("/org/kde/Solid/PowerManagement/Actions/BrightnessControl");
+const QString POWERDEVIL_INTERFACE = QStringLiteral("org.kde.Solid.PowerManagement.Actions.BrightnessControl");
+const QString POWERDEVIL_GET_BRIGHTNESS = QStringLiteral("brightness");
+const QString POWERDEVIL_GET_MAX_BRIGHTNESS = QStringLiteral("brightnessMax");
+const QString POWERDEVIL_SET_BRIGHTNESS = QStringLiteral("setBrightness");
+const QString POWERDEVIL_SET_BRIGHTNESS_SILENT = QStringLiteral("setBrightnessSilent");
 
 // Default state
 const int DEFAULT_TIMEOUT = 5000;
